@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import url(sanitize.css);
+@font-face {
+	font-family: 'KleeOne';
+	src: url(font/KleeOne-Regular.ttf);
+}
+
+// 変数定義ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+$main-color: #000000;
+$font_color1: #A82C2C;
+$font_color2: #DCDCDC;
+$font_color3: #DD3B1B;
+$font-family1: 'New Tegomin', serif;
+$font-family2: 'KleeOne';
+
+$breakpoints: (
+  'sm': 'screen and (max-width: 500px)',
+  'md': 'screen and (max-width: 900px)',
+  'lg': 'screen and (max-width: 1350px)',
+  'xl': 'screen and (min-width: 1350px)',
+
+) !default;
+
+@mixin mq($breakpoint: md){
+    @media #{map-get($breakpoints, $breakpoint)}{
+        @content;
+    }
+}
+
+// 共通部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: $font_color2;
+    font-family: $font-family2;
+}
+
+.novel-text{
+    font-size: 1vw;
+    color: $font_color2;
+    line-height: 2;
+    opacity: 0.8;
+}
+
+
+body{
+    background-color: $main-color;
+    background-image: url(img/comp.png);
+    background-color:rgba(255, 255, 255, 0.13);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+// ヘッダー部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+header{
+    .header-img{
+        background-image: url(img/header.jpg);
+        background-size: cover;
+        position: relative;
+        padding-bottom: 4vw;
+        z-index: -1;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .logo{
+            padding: 2vw 0 0 7vw;
+            position: relative;
+            z-index: 1;
+            h1{
+                margin: 0;
+                line-height: 1.1;
+                .md-red{
+                    font-size: 3vw;
+                    color: $font_color1;
+                    font-family: $font-family1;
+                }
+                .sm-white{
+                    font-size: 2vw;
+                    color: $font_color2;
+
+                }
+                .lg-lightred{
+                    font-size: 4vw;
+                    color: $font_color3;
+                    font-family: $font-family1;
+                }
+                .lg-red{
+                    font-size: 4vw;
+                    color: $font_color1;
+                    font-family: $font-family1;
+                }
+                .lg-white{
+                    font-size: 4vw;
+                    color: $font_color2;
+                    font-family: $font-family1;
+                }
+            }
+        }
+
+        h2{
+            font-size: 4vw;
+            margin: 14vw 0 0 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            span{
+                font-size: 5vw;
+                font-family: $font-family1;
+                color: $font_color1;
+            }
+        }
+        .novel-text{
+            margin: 10vw 0 0 9vw;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+.story{
+    h3{
+        font-size: 3vw;
+        color: $font_color3;
+        margin: 7vw 0 0 0;
+        text-align: center;
+    }
+    .story-text{
+        font-size: 1.2vw;
+        text-align: center;
+        margin: 3vw 0 0 0;
+        line-height: 1.6;
+        span{
+            font-size: 1.5vw;
+            font-family: $font-family1;
+            color: $font_color1;
+        }
+    }
+    .ticket-link{
+        a{
+            display: inline-block;
+            background-image: url(img/link.jpg);
+            font-size: 1.5vw;
+            text-decoration: none;
+            padding: 1vw 2vw;
+        }
+    }
+}

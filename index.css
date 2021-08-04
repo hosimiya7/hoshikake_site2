@@ -1,0 +1,135 @@
+@import url(sanitize.css);
+@font-face {
+  font-family: 'KleeOne';
+  src: url(font/KleeOne-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: #DCDCDC;
+  font-family: "KleeOne";
+}
+
+.novel-text {
+  font-size: 1vw;
+  color: #DCDCDC;
+  line-height: 2;
+  opacity: 0.8;
+}
+
+body {
+  background-color: #000000;
+  background-image: url(img/comp.png);
+  background-color: rgba(255, 255, 255, 0.13);
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+
+header .header-img {
+  background-image: url(img/header.jpg);
+  background-size: cover;
+  position: relative;
+  padding-bottom: 4vw;
+  z-index: -1;
+}
+
+header .header-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+header .header-img .logo {
+  padding: 2vw 0 0 7vw;
+  position: relative;
+  z-index: 1;
+}
+
+header .header-img .logo h1 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+header .header-img .logo h1 .md-red {
+  font-size: 3vw;
+  color: #A82C2C;
+  font-family: "New Tegomin", serif;
+}
+
+header .header-img .logo h1 .sm-white {
+  font-size: 2vw;
+  color: #DCDCDC;
+}
+
+header .header-img .logo h1 .lg-lightred {
+  font-size: 4vw;
+  color: #DD3B1B;
+  font-family: "New Tegomin", serif;
+}
+
+header .header-img .logo h1 .lg-red {
+  font-size: 4vw;
+  color: #A82C2C;
+  font-family: "New Tegomin", serif;
+}
+
+header .header-img .logo h1 .lg-white {
+  font-size: 4vw;
+  color: #DCDCDC;
+  font-family: "New Tegomin", serif;
+}
+
+header .header-img h2 {
+  font-size: 4vw;
+  margin: 14vw 0 0 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+header .header-img h2 span {
+  font-size: 5vw;
+  font-family: "New Tegomin", serif;
+  color: #A82C2C;
+}
+
+header .header-img .novel-text {
+  margin: 10vw 0 0 9vw;
+  position: relative;
+  z-index: 1;
+}
+
+.story h3 {
+  font-size: 3vw;
+  color: #DD3B1B;
+  margin: 7vw 0 0 0;
+  text-align: center;
+}
+
+.story .story-text {
+  font-size: 1.2vw;
+  text-align: center;
+  margin: 3vw 0 0 0;
+  line-height: 1.6;
+}
+
+.story .story-text span {
+  font-size: 1.5vw;
+  font-family: "New Tegomin", serif;
+  color: #A82C2C;
+}
+
+.story .ticket-link a {
+  display: inline-block;
+  background-image: url(img/link.jpg);
+  font-size: 1.5vw;
+  text-decoration: none;
+  padding: 1vw 2vw;
+}
+/*# sourceMappingURL=index.css.map */
