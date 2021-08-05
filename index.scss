@@ -42,7 +42,7 @@ $breakpoints: (
     font-size: 1vw;
     color: $font_color2;
     line-height: 2;
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 
@@ -52,6 +52,7 @@ body{
     background-color:rgba(255, 255, 255, 0.13);
     background-blend-mode: lighten;
     background-size: cover;
+    margin-bottom: 100rem;
 }
 // ヘッダー部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
@@ -126,7 +127,9 @@ header{
     }
 }
 
+// imgのフィルターとaの背景調整…
 .story{
+    position: relative;
     h3{
         font-size: 3vw;
         color: $font_color3;
@@ -136,7 +139,7 @@ header{
     .story-text{
         font-size: 1.2vw;
         text-align: center;
-        margin: 3vw 0 0 0;
+        margin: 3.5vw 0 0 0;
         line-height: 1.6;
         span{
             font-size: 1.5vw;
@@ -144,13 +147,168 @@ header{
             color: $font_color1;
         }
     }
+    img{
+        position: absolute;
+        z-index: -1;
+        top: 3.5vw;
+        left: 18vw;
+        width: 42%;
+        height: 60%;
+    }
     .ticket-link{
+        margin: 4vw 0 0 0;
+        text-align: center;
         a{
             display: inline-block;
-            background-image: url(img/link.jpg);
+            // background-image: url(img/link.jpg);
+            background-color: $font_color1;
             font-size: 1.5vw;
             text-decoration: none;
-            padding: 1vw 2vw;
+            padding: 1vw 1.5vw;
+            color: $main-color;
+            font-weight: bold;
+        }
+    }
+    .novel-text{
+        text-align: right;
+        opacity: 40%;
+        z-index: 2;
+        margin: -4vw 2rem 0 0;
+    }
+}
+
+// imgのぼかし、透過
+.mission{
+    position: relative;
+    h3{
+        font-size: 3vw;
+        color: $font_color3;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+    .mission-text{
+        font-size: 1.2vw;
+        text-align: center;
+        margin: 4vw 0 0 0;
+        line-height: 1.6;
+        p{
+            &:last-child{
+                margin-top: 3rem;
+            }
+        }
+        span{
+            font-size: 1.5vw;
+            font-family: $font-family1;
+            color: $font_color1;
+        }
+    }
+    img{
+        position: absolute;
+        z-index: -1;
+        top: 3vw;
+        left: calc((100% - 42%) / 2);;
+        width: 42%;
+        height: 50%;
+    }
+    .novel-text{
+        margin: -2rem 0 0 2rem;
+        .right{
+            text-align: right;
+            margin: 0 2rem 0 0;
         }
     }
 }
+
+
+.ticket{
+    position: relative;
+    margin-top: -13vw;
+    h3{
+        font-size: 3vw;
+        color: $font_color3;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+    table{
+        display: inline-block;
+        margin: 5vw 15vw 0 15vw;
+        tr{
+            display: inline-block;
+            &:nth-child(2){
+                margin: 0 12vw;
+            }
+            &:last-child{
+                margin: 0.5vw 7.5vw;
+                td{
+                    margin: 0.5vw 0 0 6vw;
+                    &:nth-child(2){
+                        margin-left: 10vw;
+                    }
+                }
+            }
+        }
+        td{
+            font-size: 1.5vw;
+            text-align: right;
+            display: inline-block;
+            margin: 1.6vw 0 0 6vw;
+        }
+        th{
+            display: inline-block;
+            font-size: 2vw;
+            color: $font_color3;
+            &:first-child{
+                margin: 0 13vw;
+            }
+            &:nth-child(2){
+                margin: 0 7.5vw;
+            }
+        }
+        &:nth-child(2){
+            td{
+                // margin: 1.6vw 0 0 6vw;
+                span{
+                    font-size: 1.2vw;
+                    margin-left: 3vw;
+                }
+                &:nth-child(2){
+                    margin-left: 14.5vw;
+                }
+            }
+        }
+    }
+    img{
+        position: absolute;
+        z-index: -1;
+        top: 3vw;
+        left: calc((100% - 60%) / 2);;
+        width: 60%;
+        height: 70%;
+    }
+    .ticket-link{
+        margin: 2.5vw 0 0 0;
+        text-align: center;
+        a{
+            display: inline-block;
+            // background-image: url(img/link.jpg);
+            background-color: $font_color1;
+            font-size: 1.5vw;
+            text-decoration: none;
+            padding: 1vw 2vw;
+            color: $main-color;
+            font-weight: bold;
+        }
+    }
+    .ticket-text{
+        font-size: 1vw;
+        text-align: center;
+        margin: 2vw 0 0 0;
+        line-height: 2;
+        p{
+            &:last-child{
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+

@@ -16,7 +16,7 @@
   font-size: 1vw;
   color: #DCDCDC;
   line-height: 2;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 body {
@@ -25,6 +25,7 @@ body {
   background-color: rgba(255, 255, 255, 0.13);
   background-blend-mode: lighten;
   background-size: cover;
+  margin-bottom: 100rem;
 }
 
 header .header-img {
@@ -105,6 +106,10 @@ header .header-img .novel-text {
   z-index: 1;
 }
 
+.story {
+  position: relative;
+}
+
 .story h3 {
   font-size: 3vw;
   color: #DD3B1B;
@@ -115,7 +120,7 @@ header .header-img .novel-text {
 .story .story-text {
   font-size: 1.2vw;
   text-align: center;
-  margin: 3vw 0 0 0;
+  margin: 3.5vw 0 0 0;
   line-height: 1.6;
 }
 
@@ -125,11 +130,182 @@ header .header-img .novel-text {
   color: #A82C2C;
 }
 
+.story img {
+  position: absolute;
+  z-index: -1;
+  top: 3.5vw;
+  left: 18vw;
+  width: 42%;
+  height: 60%;
+}
+
+.story .ticket-link {
+  margin: 4vw 0 0 0;
+  text-align: center;
+}
+
 .story .ticket-link a {
   display: inline-block;
-  background-image: url(img/link.jpg);
+  background-color: #A82C2C;
+  font-size: 1.5vw;
+  text-decoration: none;
+  padding: 1vw 1.5vw;
+  color: #000000;
+  font-weight: bold;
+}
+
+.story .novel-text {
+  text-align: right;
+  opacity: 40%;
+  z-index: 2;
+  margin: -4vw 2rem 0 0;
+}
+
+.mission {
+  position: relative;
+}
+
+.mission h3 {
+  font-size: 3vw;
+  color: #DD3B1B;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+.mission .mission-text {
+  font-size: 1.2vw;
+  text-align: center;
+  margin: 4vw 0 0 0;
+  line-height: 1.6;
+}
+
+.mission .mission-text p:last-child {
+  margin-top: 3rem;
+}
+
+.mission .mission-text span {
+  font-size: 1.5vw;
+  font-family: "New Tegomin", serif;
+  color: #A82C2C;
+}
+
+.mission img {
+  position: absolute;
+  z-index: -1;
+  top: 3vw;
+  left: calc((100% - 42%) / 2);
+  width: 42%;
+  height: 50%;
+}
+
+.mission .novel-text {
+  margin: -2rem 0 0 2rem;
+}
+
+.mission .novel-text .right {
+  text-align: right;
+  margin: 0 2rem 0 0;
+}
+
+.ticket {
+  position: relative;
+  margin-top: -13vw;
+}
+
+.ticket h3 {
+  font-size: 3vw;
+  color: #DD3B1B;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+.ticket table {
+  display: inline-block;
+  margin: 5vw 15vw 0 15vw;
+}
+
+.ticket table tr {
+  display: inline-block;
+}
+
+.ticket table tr:nth-child(2) {
+  margin: 0 12vw;
+}
+
+.ticket table tr:last-child {
+  margin: 0.5vw 7.5vw;
+}
+
+.ticket table tr:last-child td {
+  margin: 0.5vw 0 0 6vw;
+}
+
+.ticket table tr:last-child td:nth-child(2) {
+  margin-left: 10vw;
+}
+
+.ticket table td {
+  font-size: 1.5vw;
+  text-align: right;
+  display: inline-block;
+  margin: 1.6vw 0 0 6vw;
+}
+
+.ticket table th {
+  display: inline-block;
+  font-size: 2vw;
+  color: #DD3B1B;
+}
+
+.ticket table th:first-child {
+  margin: 0 13vw;
+}
+
+.ticket table th:nth-child(2) {
+  margin: 0 7.5vw;
+}
+
+.ticket table:nth-child(2) td span {
+  font-size: 1.2vw;
+  margin-left: 3vw;
+}
+
+.ticket table:nth-child(2) td:nth-child(2) {
+  margin-left: 14.5vw;
+}
+
+.ticket img {
+  position: absolute;
+  z-index: -1;
+  top: 3vw;
+  left: calc((100% - 60%) / 2);
+  width: 60%;
+  height: 70%;
+}
+
+.ticket .ticket-link {
+  margin: 2.5vw 0 0 0;
+  text-align: center;
+}
+
+.ticket .ticket-link a {
+  display: inline-block;
+  background-color: #A82C2C;
   font-size: 1.5vw;
   text-decoration: none;
   padding: 1vw 2vw;
+  color: #000000;
+  font-weight: bold;
+}
+
+.ticket .ticket-text {
+  font-size: 1vw;
+  text-align: center;
+  margin: 2vw 0 0 0;
+  line-height: 2;
+}
+
+.ticket .ticket-text p:last-child {
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=index.css.map */
