@@ -1,36 +1,35 @@
 @charset "UTF-8";
 @import url(sanitize.css);
 @font-face {
-	font-family: 'KleeOne';
-	src: url(font/KleeOne-Regular.ttf);
+    font-family: "KleeOne";
+    src: url(font/KleeOne-Regular.ttf);
 }
 
 // 変数定義ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
 $main-color: #000000;
-$font_color1: #A82C2C;
-$font_color2: #DCDCDC;
-$font_color3: #DD3B1B;
-$font-family1: 'New Tegomin', serif;
-$font-family2: 'KleeOne';
+$font_color1: #a82c2c;
+$font_color2: #dcdcdc;
+$font_color3: #dd3b1b;
+$font-family1: "New Tegomin", serif;
+$font-family2: "KleeOne";
 
 $breakpoints: (
-  'sm': 'screen and (max-width: 500px)',
-  'md': 'screen and (max-width: 900px)',
-  'lg': 'screen and (max-width: 1350px)',
-  'xl': 'screen and (min-width: 1350px)',
-
+    "sm": "screen and (max-width: 500px)",
+    "md": "screen and (max-width: 900px)",
+    "lg": "screen and (max-width: 1350px)",
+    "xl": "screen and (min-width: 1350px)",
 ) !default;
 
-@mixin mq($breakpoint: md){
-    @media #{map-get($breakpoints, $breakpoint)}{
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
         @content;
     }
 }
 
 // 共通部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
@@ -38,32 +37,76 @@ $breakpoints: (
     font-family: $font-family2;
 }
 
-.novel-text{
+.novel-text {
     font-size: 1vw;
     color: $font_color2;
     line-height: 2;
     opacity: 0.4;
 }
 
-
-body{
+body {
     background-color: $main-color;
-    background-image: url(img/comp.png);
-    background-color:rgba(255, 255, 255, 0.13);
+    // background-image: url(img/comp.png);
+    // background-color: rgba(255, 255, 255, 0.13);
     background-blend-mode: lighten;
     background-size: cover;
-    margin-bottom: 100rem;
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    padding: 2vw 0 0 7vw;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    line-height: 1.1;
+
+    .md-red {
+        font-size: 3vw;
+        color: $font_color1;
+        font-family: $font-family1;
+    }
+    .sm-white {
+        font-size: 2vw;
+        color: $font_color2;
+    }
+    .lg-lightred {
+        font-size: 4vw;
+        color: $font_color3;
+        font-family: $font-family1;
+    }
+    .lg-red {
+        font-size: 4vw;
+        color: $font_color1;
+        font-family: $font-family1;
+    }
+    .lg-white {
+        font-size: 4vw;
+        color: $font_color2;
+        font-family: $font-family1;
+    }
+}
+
+h3 {
+    font-size: 3vw;
+    color: $font_color3;
+    text-align: center;
 }
 // ヘッダー部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
-header{
-    .header-img{
+header {
+    .header-img {
         background-image: url(img/header.jpg);
+        filter: opacity(80%);
         background-size: cover;
         position: relative;
         padding-bottom: 4vw;
         z-index: -1;
-        &::after{
+        &::after {
             content: "";
             position: absolute;
             top: 0;
@@ -72,54 +115,20 @@ header{
             width: 100%;
             background: rgba(0, 0, 0, 0.6);
         }
-        .logo{
-            padding: 2vw 0 0 7vw;
-            position: relative;
-            z-index: 1;
-            h1{
-                margin: 0;
-                line-height: 1.1;
-                .md-red{
-                    font-size: 3vw;
-                    color: $font_color1;
-                    font-family: $font-family1;
-                }
-                .sm-white{
-                    font-size: 2vw;
-                    color: $font_color2;
 
-                }
-                .lg-lightred{
-                    font-size: 4vw;
-                    color: $font_color3;
-                    font-family: $font-family1;
-                }
-                .lg-red{
-                    font-size: 4vw;
-                    color: $font_color1;
-                    font-family: $font-family1;
-                }
-                .lg-white{
-                    font-size: 4vw;
-                    color: $font_color2;
-                    font-family: $font-family1;
-                }
-            }
-        }
-
-        h2{
+        h2 {
             font-size: 4vw;
             margin: 14vw 0 0 0;
             text-align: center;
             position: relative;
             z-index: 1;
-            span{
+            span {
                 font-size: 5vw;
                 font-family: $font-family1;
                 color: $font_color1;
             }
         }
-        .novel-text{
+        .novel-text {
             margin: 10vw 0 0 9vw;
             position: relative;
             z-index: 1;
@@ -128,37 +137,35 @@ header{
 }
 
 // imgのフィルターとaの背景調整…
-.story{
+.story {
     position: relative;
-    h3{
-        font-size: 3vw;
-        color: $font_color3;
+    h3 {
         margin: 7vw 0 0 0;
-        text-align: center;
     }
-    .story-text{
+    .story-text {
         font-size: 1.2vw;
         text-align: center;
         margin: 3.5vw 0 0 0;
         line-height: 1.6;
-        span{
+        span {
             font-size: 1.5vw;
             font-family: $font-family1;
             color: $font_color1;
         }
     }
-    img{
+    img {
         position: absolute;
+        filter: opacity(20%);
         z-index: -1;
         top: 3.5vw;
         left: 18vw;
         width: 42%;
         height: 60%;
     }
-    .ticket-link{
+    .ticket-link {
         margin: 4vw 0 0 0;
         text-align: center;
-        a{
+        a {
             display: inline-block;
             // background-image: url(img/link.jpg);
             background-color: $font_color1;
@@ -169,126 +176,120 @@ header{
             font-weight: bold;
         }
     }
-    .novel-text{
+    .novel-text {
         text-align: right;
-        opacity: 40%;
         z-index: 2;
         margin: -4vw 2rem 0 0;
     }
 }
 
 // imgのぼかし、透過
-.mission{
+.mission {
     position: relative;
-    h3{
-        font-size: 3vw;
-        color: $font_color3;
+    h3 {
         margin: 0 0 0 0;
-        text-align: center;
     }
-    .mission-text{
+    .mission-text {
         font-size: 1.2vw;
         text-align: center;
         margin: 4vw 0 0 0;
         line-height: 1.6;
-        p{
-            &:last-child{
+        p {
+            &:last-child {
                 margin-top: 3rem;
             }
         }
-        span{
+        span {
             font-size: 1.5vw;
             font-family: $font-family1;
             color: $font_color1;
         }
     }
-    img{
+    img {
         position: absolute;
+        filter: opacity(70%);
         z-index: -1;
         top: 3vw;
-        left: calc((100% - 42%) / 2);;
+        left: calc((100% - 42%) / 2);
         width: 42%;
         height: 50%;
     }
-    .novel-text{
+    .novel-text {
         margin: -2rem 0 0 2rem;
-        .right{
+        .right {
             text-align: right;
             margin: 0 2rem 0 0;
         }
     }
 }
 
-
-.ticket{
+.ticket {
     position: relative;
     margin-top: -13vw;
-    h3{
-        font-size: 3vw;
-        color: $font_color3;
+    h3 {
         margin: 0 0 0 0;
-        text-align: center;
     }
-    table{
+    table {
         display: inline-block;
-        margin: 5vw 15vw 0 15vw;
-        tr{
+        margin: 4.5vw 15vw 0 15vw;
+        tr {
             display: inline-block;
-            &:nth-child(2){
+            &:nth-child(2) {
                 margin: 0 12vw;
             }
-            &:last-child{
+            &:last-child {
                 margin: 0.5vw 7.5vw;
-                td{
+                td {
                     margin: 0.5vw 0 0 6vw;
-                    &:nth-child(2){
+                    &:nth-child(2) {
                         margin-left: 10vw;
                     }
                 }
             }
         }
-        td{
+        td {
             font-size: 1.5vw;
             text-align: right;
             display: inline-block;
             margin: 1.6vw 0 0 6vw;
         }
-        th{
+        th {
             display: inline-block;
             font-size: 2vw;
             color: $font_color3;
-            &:first-child{
+            &:first-child {
                 margin: 0 13vw;
             }
-            &:nth-child(2){
+            &:nth-child(2) {
                 margin: 0 7.5vw;
             }
         }
-        &:nth-child(2){
-            td{
+        &:nth-child(2) {
+            td {
                 // margin: 1.6vw 0 0 6vw;
-                span{
+                span {
                     font-size: 1.2vw;
                     margin-left: 3vw;
                 }
-                &:nth-child(2){
+                &:nth-child(2) {
                     margin-left: 14.5vw;
                 }
             }
         }
     }
-    img{
+    img {
         position: absolute;
+        filter: opacity(50%);
         z-index: -1;
-        top: 3vw;
-        left: calc((100% - 60%) / 2);;
-        width: 60%;
-        height: 70%;
+        top: 0vw;
+        left: calc((100% - 65%) / 2);
+        width: 65%;
+        height: 73%;
     }
-    .ticket-link{
+    .ticket-link {
         margin: 2.5vw 0 0 0;
         text-align: center;
-        a{
+        a {
             display: inline-block;
             // background-image: url(img/link.jpg);
             background-color: $font_color1;
@@ -299,16 +300,192 @@ header{
             font-weight: bold;
         }
     }
-    .ticket-text{
+    .ticket-text {
         font-size: 1vw;
         text-align: center;
-        margin: 2vw 0 0 0;
+        margin: 1.5vw 0 0 0;
         line-height: 2;
-        p{
-            &:last-child{
+        p {
+            &:last-child {
                 margin-top: 3rem;
+            }
+        }
+    }
+    .novel-text {
+        margin: 2vw 0 0 2rem;
+    }
+}
+
+.access {
+    h3 {
+        margin: -2vw 0 0 0;
+    }
+    .access-text {
+        font-size: 1.2vw;
+        text-align: center;
+        margin: 4vw 0 0 0;
+        line-height: 1.6;
+        p {
+            margin-top: 0.5vw;
+        }
+    }
+    .access-img {
+        margin-top: 2vw;
+    }
+    .map {
+        iframe {
+            width: 29vw;
+            height: 25vw;
+        }
+    }
+    img {
+        width: 35vw;
+        filter: opacity(40%);
+    }
+    .novel-text {
+        text-align: right;
+        z-index: 2;
+        margin: -8vw 2rem 0 0;
+    }
+}
+
+.caution {
+    .novel-text {
+        p {
+            width: 18vw;
+            text-align: left;
+            z-index: 2;
+            margin: -20rem 0 0 2rem;
+        }
+    }
+    h3 {
+        margin-top: 2vw;
+    }
+    .caution-text {
+        margin: 1vw auto 0 auto;
+        font-size: 1.2vw;
+        text-align: center;
+        line-height: 1.8;
+        background-image: url(img/fire.jpg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-blend-mode: darken;
+        p {
+            margin: 1vw 0 0 0;
+            padding: 6vw 0;
+            display: inline-block;
+            text-align: left;
+
+            span {
+                display: block;
+                margin: 1vw 0 2vw 0;
             }
         }
     }
 }
 
+.command {
+    position: relative;
+    .novel-text {
+        width: 18vw;
+        text-align: left;
+        line-height: 5;
+        margin: -4vw 2rem 0 0;
+    }
+    img {
+        width: 70vw;
+        position: absolute;
+        filter: opacity(20%);
+        z-index: -1;
+        top: 12vw;
+        left: calc((100% - 70%) / 2);
+    }
+    .command-text {
+        p {
+            font-family: $font-family1;
+            font-size: 1vw;
+            &:nth-child(1) {
+                margin: 1vw 0 0 20vw;
+            }
+            &:nth-child(2) {
+                margin: 5vw 0 0 40vw;
+            }
+            &:nth-child(3) {
+                margin: 10vw 0 0 70vw;
+            }
+            &:nth-child(4) {
+                margin: 6vw 0 0 22vw;
+            }
+            &:nth-child(5) {
+                margin: 7vw 0 0 30vw;
+            }
+            &:nth-child(6) {
+                margin: 0 0 0 37vw;
+            }
+            span {
+                font-family: $font-family1;
+                color: $font_color1;
+                font-size: 1.5vw;
+            }
+            .large {
+                font-size: 3vw;
+            }
+        }
+    }
+    input {
+        background-color: $font_color1;
+        border: none;
+        outline: none;
+        width: 20%;
+        height: 2rem;
+        padding: 0.5rem;
+        display: flex;
+        margin: 1vw auto 0 auto;
+    }
+}
+
+footer {
+    .logo {
+        padding: 0;
+        margin-top: 10rem;
+        text-align: center;
+    }
+    .footer-text {
+        margin: 6vw 4vw 0 0;
+        .bold {
+            font-weight: bold;
+            margin-top: 1vw;
+        }
+    }
+    .footer-link {
+        margin: 6vw 0 0 4vw;
+        .tell-link {
+            margin-top: 1vw;
+            a {
+                display: inline-block;
+                // background-image: url(img/link.jpg);
+                background-color: $font_color1;
+                font-size: 1.57vw;
+                text-decoration: none;
+                padding: 1vw 3.5vw;
+                color: $main-color;
+                font-weight: bold;
+            }
+        }
+        .ticket {
+            margin: 0;
+            padding: 0;
+            p {
+                margin-top: 1vw;
+            }
+            a {
+                display: inline;
+                margin: 0;
+            }
+        }
+    }
+    .copy-write {
+        text-align: center;
+        margin-top: 10vw;
+    }
+}

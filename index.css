@@ -1,6 +1,6 @@
 @import url(sanitize.css);
 @font-face {
-  font-family: 'KleeOne';
+  font-family: "KleeOne";
   src: url(font/KleeOne-Regular.ttf);
 }
 
@@ -8,28 +8,80 @@
   margin: 0;
   border: 0;
   padding: 0;
-  color: #DCDCDC;
+  color: #dcdcdc;
   font-family: "KleeOne";
 }
 
 .novel-text {
   font-size: 1vw;
-  color: #DCDCDC;
+  color: #dcdcdc;
   line-height: 2;
   opacity: 0.4;
 }
 
 body {
   background-color: #000000;
-  background-image: url(img/comp.png);
-  background-color: rgba(255, 255, 255, 0.13);
   background-blend-mode: lighten;
   background-size: cover;
-  margin-bottom: 100rem;
+  margin-bottom: 2rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  padding: 2vw 0 0 7vw;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.logo .md-red {
+  font-size: 3vw;
+  color: #a82c2c;
+  font-family: "New Tegomin", serif;
+}
+
+.logo .sm-white {
+  font-size: 2vw;
+  color: #dcdcdc;
+}
+
+.logo .lg-lightred {
+  font-size: 4vw;
+  color: #dd3b1b;
+  font-family: "New Tegomin", serif;
+}
+
+.logo .lg-red {
+  font-size: 4vw;
+  color: #a82c2c;
+  font-family: "New Tegomin", serif;
+}
+
+.logo .lg-white {
+  font-size: 4vw;
+  color: #dcdcdc;
+  font-family: "New Tegomin", serif;
+}
+
+h3 {
+  font-size: 3vw;
+  color: #dd3b1b;
+  text-align: center;
 }
 
 header .header-img {
   background-image: url(img/header.jpg);
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
   background-size: cover;
   position: relative;
   padding-bottom: 4vw;
@@ -46,46 +98,6 @@ header .header-img::after {
   background: rgba(0, 0, 0, 0.6);
 }
 
-header .header-img .logo {
-  padding: 2vw 0 0 7vw;
-  position: relative;
-  z-index: 1;
-}
-
-header .header-img .logo h1 {
-  margin: 0;
-  line-height: 1.1;
-}
-
-header .header-img .logo h1 .md-red {
-  font-size: 3vw;
-  color: #A82C2C;
-  font-family: "New Tegomin", serif;
-}
-
-header .header-img .logo h1 .sm-white {
-  font-size: 2vw;
-  color: #DCDCDC;
-}
-
-header .header-img .logo h1 .lg-lightred {
-  font-size: 4vw;
-  color: #DD3B1B;
-  font-family: "New Tegomin", serif;
-}
-
-header .header-img .logo h1 .lg-red {
-  font-size: 4vw;
-  color: #A82C2C;
-  font-family: "New Tegomin", serif;
-}
-
-header .header-img .logo h1 .lg-white {
-  font-size: 4vw;
-  color: #DCDCDC;
-  font-family: "New Tegomin", serif;
-}
-
 header .header-img h2 {
   font-size: 4vw;
   margin: 14vw 0 0 0;
@@ -97,7 +109,7 @@ header .header-img h2 {
 header .header-img h2 span {
   font-size: 5vw;
   font-family: "New Tegomin", serif;
-  color: #A82C2C;
+  color: #a82c2c;
 }
 
 header .header-img .novel-text {
@@ -111,10 +123,7 @@ header .header-img .novel-text {
 }
 
 .story h3 {
-  font-size: 3vw;
-  color: #DD3B1B;
   margin: 7vw 0 0 0;
-  text-align: center;
 }
 
 .story .story-text {
@@ -127,11 +136,13 @@ header .header-img .novel-text {
 .story .story-text span {
   font-size: 1.5vw;
   font-family: "New Tegomin", serif;
-  color: #A82C2C;
+  color: #a82c2c;
 }
 
 .story img {
   position: absolute;
+  -webkit-filter: opacity(20%);
+          filter: opacity(20%);
   z-index: -1;
   top: 3.5vw;
   left: 18vw;
@@ -146,7 +157,7 @@ header .header-img .novel-text {
 
 .story .ticket-link a {
   display: inline-block;
-  background-color: #A82C2C;
+  background-color: #a82c2c;
   font-size: 1.5vw;
   text-decoration: none;
   padding: 1vw 1.5vw;
@@ -156,7 +167,6 @@ header .header-img .novel-text {
 
 .story .novel-text {
   text-align: right;
-  opacity: 40%;
   z-index: 2;
   margin: -4vw 2rem 0 0;
 }
@@ -166,10 +176,7 @@ header .header-img .novel-text {
 }
 
 .mission h3 {
-  font-size: 3vw;
-  color: #DD3B1B;
   margin: 0 0 0 0;
-  text-align: center;
 }
 
 .mission .mission-text {
@@ -186,11 +193,13 @@ header .header-img .novel-text {
 .mission .mission-text span {
   font-size: 1.5vw;
   font-family: "New Tegomin", serif;
-  color: #A82C2C;
+  color: #a82c2c;
 }
 
 .mission img {
   position: absolute;
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
   z-index: -1;
   top: 3vw;
   left: calc((100% - 42%) / 2);
@@ -213,15 +222,12 @@ header .header-img .novel-text {
 }
 
 .ticket h3 {
-  font-size: 3vw;
-  color: #DD3B1B;
   margin: 0 0 0 0;
-  text-align: center;
 }
 
 .ticket table {
   display: inline-block;
-  margin: 5vw 15vw 0 15vw;
+  margin: 4.5vw 15vw 0 15vw;
 }
 
 .ticket table tr {
@@ -254,7 +260,7 @@ header .header-img .novel-text {
 .ticket table th {
   display: inline-block;
   font-size: 2vw;
-  color: #DD3B1B;
+  color: #dd3b1b;
 }
 
 .ticket table th:first-child {
@@ -276,11 +282,13 @@ header .header-img .novel-text {
 
 .ticket img {
   position: absolute;
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
   z-index: -1;
-  top: 3vw;
-  left: calc((100% - 60%) / 2);
-  width: 60%;
-  height: 70%;
+  top: 0vw;
+  left: calc((100% - 65%) / 2);
+  width: 65%;
+  height: 73%;
 }
 
 .ticket .ticket-link {
@@ -290,7 +298,7 @@ header .header-img .novel-text {
 
 .ticket .ticket-link a {
   display: inline-block;
-  background-color: #A82C2C;
+  background-color: #a82c2c;
   font-size: 1.5vw;
   text-decoration: none;
   padding: 1vw 2vw;
@@ -301,11 +309,210 @@ header .header-img .novel-text {
 .ticket .ticket-text {
   font-size: 1vw;
   text-align: center;
-  margin: 2vw 0 0 0;
+  margin: 1.5vw 0 0 0;
   line-height: 2;
 }
 
 .ticket .ticket-text p:last-child {
   margin-top: 3rem;
+}
+
+.ticket .novel-text {
+  margin: 2vw 0 0 2rem;
+}
+
+.access h3 {
+  margin: -2vw 0 0 0;
+}
+
+.access .access-text {
+  font-size: 1.2vw;
+  text-align: center;
+  margin: 4vw 0 0 0;
+  line-height: 1.6;
+}
+
+.access .access-text p {
+  margin-top: 0.5vw;
+}
+
+.access .access-img {
+  margin-top: 2vw;
+}
+
+.access .map iframe {
+  width: 29vw;
+  height: 25vw;
+}
+
+.access img {
+  width: 35vw;
+  -webkit-filter: opacity(40%);
+          filter: opacity(40%);
+}
+
+.access .novel-text {
+  text-align: right;
+  z-index: 2;
+  margin: -8vw 2rem 0 0;
+}
+
+.caution .novel-text p {
+  width: 18vw;
+  text-align: left;
+  z-index: 2;
+  margin: -20rem 0 0 2rem;
+}
+
+.caution h3 {
+  margin-top: 2vw;
+}
+
+.caution .caution-text {
+  margin: 1vw auto 0 auto;
+  font-size: 1.2vw;
+  text-align: center;
+  line-height: 1.8;
+  background-image: url(img/fire.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+}
+
+.caution .caution-text p {
+  margin: 1vw 0 0 0;
+  padding: 6vw 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.caution .caution-text p span {
+  display: block;
+  margin: 1vw 0 2vw 0;
+}
+
+.command {
+  position: relative;
+}
+
+.command .novel-text {
+  width: 18vw;
+  text-align: left;
+  line-height: 5;
+  margin: -4vw 2rem 0 0;
+}
+
+.command img {
+  width: 70vw;
+  position: absolute;
+  -webkit-filter: opacity(20%);
+          filter: opacity(20%);
+  z-index: -1;
+  top: 12vw;
+  left: calc((100% - 70%) / 2);
+}
+
+.command .command-text p {
+  font-family: "New Tegomin", serif;
+  font-size: 1vw;
+}
+
+.command .command-text p:nth-child(1) {
+  margin: 1vw 0 0 20vw;
+}
+
+.command .command-text p:nth-child(2) {
+  margin: 5vw 0 0 40vw;
+}
+
+.command .command-text p:nth-child(3) {
+  margin: 10vw 0 0 70vw;
+}
+
+.command .command-text p:nth-child(4) {
+  margin: 6vw 0 0 22vw;
+}
+
+.command .command-text p:nth-child(5) {
+  margin: 7vw 0 0 30vw;
+}
+
+.command .command-text p:nth-child(6) {
+  margin: 0 0 0 37vw;
+}
+
+.command .command-text p span {
+  font-family: "New Tegomin", serif;
+  color: #a82c2c;
+  font-size: 1.5vw;
+}
+
+.command .command-text p .large {
+  font-size: 3vw;
+}
+
+.command input {
+  background-color: #a82c2c;
+  border: none;
+  outline: none;
+  width: 20%;
+  height: 2rem;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1vw auto 0 auto;
+}
+
+footer .logo {
+  padding: 0;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+footer .footer-text {
+  margin: 6vw 4vw 0 0;
+}
+
+footer .footer-text .bold {
+  font-weight: bold;
+  margin-top: 1vw;
+}
+
+footer .footer-link {
+  margin: 6vw 0 0 4vw;
+}
+
+footer .footer-link .tell-link {
+  margin-top: 1vw;
+}
+
+footer .footer-link .tell-link a {
+  display: inline-block;
+  background-color: #a82c2c;
+  font-size: 1.57vw;
+  text-decoration: none;
+  padding: 1vw 3.5vw;
+  color: #000000;
+  font-weight: bold;
+}
+
+footer .footer-link .ticket {
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-link .ticket p {
+  margin-top: 1vw;
+}
+
+footer .footer-link .ticket a {
+  display: inline;
+  margin: 0;
+}
+
+footer .copy-write {
+  text-align: center;
+  margin-top: 10vw;
 }
 /*# sourceMappingURL=index.css.map */
