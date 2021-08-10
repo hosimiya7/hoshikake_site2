@@ -35,6 +35,12 @@ body {
           justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+  .flex {
+    display: inline-block;
+  }
+}
+
 .logo {
   padding: 2vw 0 0 7vw;
   position: relative;
@@ -233,6 +239,13 @@ header .header-img .novel-text {
   margin: 4.5vw 15vw 0 15vw;
 }
 
+@media screen and (max-width: 900px) {
+  .ticket table {
+    margin: 4.5vw 7vw 0 7vw;
+    text-align: center;
+  }
+}
+
 .ticket table tr {
   display: inline-block;
 }
@@ -241,8 +254,20 @@ header .header-img .novel-text {
   margin: 0 12vw;
 }
 
+@media screen and (max-width: 900px) {
+  .ticket table tr:nth-child(2) {
+    margin: 0 3vw 0 3vw;
+  }
+}
+
 .ticket table tr:last-child {
   margin: 0.5vw 7.5vw;
+}
+
+@media screen and (max-width: 900px) {
+  .ticket table tr:last-child {
+    margin: 4.5vw 1vw 0 1vw;
+  }
 }
 
 .ticket table tr:last-child td {
@@ -258,6 +283,12 @@ header .header-img .novel-text {
   text-align: right;
   display: inline-block;
   margin: 1.6vw 0 0 6vw;
+}
+
+@media screen and (max-width: 900px) {
+  .ticket table td {
+    margin: 1.6vw 0 0 3vw;
+  }
 }
 
 .ticket table th {
@@ -327,7 +358,7 @@ header .header-img .novel-text {
 }
 
 .access h3 {
-  margin: -2vw 0 0 0;
+  margin: -22vw 0 0 0;
 }
 
 .access .access-text {
@@ -345,15 +376,43 @@ header .header-img .novel-text {
   margin-top: 2vw;
 }
 
+@media screen and (max-width: 900px) {
+  .access .access-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto 0 auto;
+  }
+}
+
 .access .map iframe {
   width: 29vw;
   height: 25vw;
+}
+
+@media screen and (max-width: 900px) {
+  .access .map iframe {
+    width: 40vw;
+  }
 }
 
 .access img {
   width: 35vw;
   -webkit-filter: opacity(55%);
           filter: opacity(55%);
+}
+
+@media screen and (max-width: 900px) {
+  .access img {
+    margin: 1rem auto 0 auto;
+    width: 45vw;
+  }
 }
 
 .access .novel-text {
@@ -363,10 +422,9 @@ header .header-img .novel-text {
 }
 
 .caution .novel-text p {
-  width: 18vw;
   text-align: left;
   z-index: 2;
-  margin: -20rem 0 0 2rem;
+  margin: 0rem 0 0 2rem;
 }
 
 .caution h3 {
@@ -401,7 +459,6 @@ header .header-img .novel-text {
 }
 
 .command .novel-text {
-  width: 18vw;
   text-align: left;
   line-height: 5;
   margin: -4vw 2rem 0 0;
@@ -469,6 +526,13 @@ header .header-img .novel-text {
   margin: 1vw auto 0 auto;
 }
 
+@media screen and (max-width: 900px) {
+  footer {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 footer .logo {
   padding: 0;
   margin-top: 10rem;
@@ -479,13 +543,31 @@ footer .footer-text {
   margin: 6vw 4vw 0 0;
 }
 
+@media screen and (max-width: 900px) {
+  footer .footer-text {
+    margin: 1rem auto 0 auto;
+  }
+}
+
 footer .footer-text .bold {
   font-weight: bold;
   margin-top: 1vw;
 }
 
+@media screen and (max-width: 900px) {
+  footer .footer-text .bold {
+    margin-top: 1rem;
+  }
+}
+
 footer .footer-link {
   margin: 6vw 0 0 4vw;
+}
+
+@media screen and (max-width: 900px) {
+  footer .footer-link {
+    margin: 1rem auto 0 auto;
+  }
 }
 
 footer .footer-link .tell-link {
@@ -504,6 +586,13 @@ footer .footer-link .tell-link a {
   font-weight: bold;
 }
 
+@media screen and (max-width: 900px) {
+  footer .footer-link .tell-link a {
+    padding: 1vw 4.75vw;
+    min-width: 106px;
+  }
+}
+
 footer .footer-link .ticket {
   margin: 0;
   padding: 0;
@@ -516,6 +605,13 @@ footer .footer-link .ticket p {
 footer .footer-link .ticket a {
   display: inline;
   margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  footer .footer-link .ticket a {
+    margin: 1rem 0 0 0;
+    padding: 1vw 3vw;
+  }
 }
 
 footer .copy-write {

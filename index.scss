@@ -17,8 +17,6 @@ $font-family2: "KleeOne";
 $breakpoints: (
     "sm": "screen and (max-width: 500px)",
     "md": "screen and (max-width: 900px)",
-    "lg": "screen and (max-width: 1350px)",
-    "xl": "screen and (min-width: 1350px)",
 ) !default;
 
 @mixin mq($breakpoint: md) {
@@ -42,6 +40,8 @@ $breakpoints: (
     color: $font_color2;
     line-height: 2;
     opacity: 0.4;
+    @include mq(md) {
+    }
 }
 
 body {
@@ -54,6 +54,9 @@ body {
 .flex {
     display: flex;
     justify-content: center;
+    @include mq(md) {
+        display: inline-block;
+    }
 }
 
 .logo {
@@ -182,7 +185,6 @@ header {
     }
 }
 
-// imgのぼかし、透過
 .mission {
     position: relative;
     h3 {
@@ -231,13 +233,23 @@ header {
     table {
         display: inline-block;
         margin: 4.5vw 15vw 0 15vw;
+        @include mq(md) {
+            margin: 4.5vw 7vw 0 7vw;
+            text-align: center;
+        }
         tr {
             display: inline-block;
             &:nth-child(2) {
                 margin: 0 12vw;
+                @include mq(md) {
+                    margin: 0 3vw 0 3vw;
+                }
             }
             &:last-child {
                 margin: 0.5vw 7.5vw;
+                @include mq(md) {
+                    margin: 4.5vw 1vw 0 1vw;
+                }
                 td {
                     margin: 0.5vw 0 0 6vw;
                     &:nth-child(2) {
@@ -251,6 +263,9 @@ header {
             text-align: right;
             display: inline-block;
             margin: 1.6vw 0 0 6vw;
+            @include mq(md) {
+                margin: 1.6vw 0 0 3vw;
+            }
         }
         th {
             display: inline-block;
@@ -317,7 +332,7 @@ header {
 
 .access {
     h3 {
-        margin: -2vw 0 0 0;
+        margin: -22vw 0 0 0;
     }
     .access-text {
         font-size: 1.2vw;
@@ -330,16 +345,30 @@ header {
     }
     .access-img {
         margin-top: 2vw;
+        @include mq(md) {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            text-align: center;
+            margin: 2rem auto 0 auto;
+        }
     }
     .map {
         iframe {
             width: 29vw;
             height: 25vw;
+            @include mq(md) {
+                width: 40vw;
+            }
         }
     }
     img {
         width: 35vw;
         filter: opacity(55%);
+        @include mq(md) {
+            margin: 1rem auto 0 auto;
+            width: 45vw;
+        }
     }
     .novel-text {
         text-align: right;
@@ -351,10 +380,9 @@ header {
 .caution {
     .novel-text {
         p {
-            width: 18vw;
             text-align: left;
             z-index: 2;
-            margin: -20rem 0 0 2rem;
+            margin: 0rem 0 0 2rem;
         }
     }
     h3 {
@@ -386,7 +414,6 @@ header {
 .command {
     position: relative;
     .novel-text {
-        width: 18vw;
         text-align: left;
         line-height: 5;
         margin: -4vw 2rem 0 0;
@@ -444,6 +471,10 @@ header {
 }
 
 footer {
+    @include mq(md) {
+        width: 100%;
+        text-align: center;
+    }
     .logo {
         padding: 0;
         margin-top: 10rem;
@@ -451,25 +482,37 @@ footer {
     }
     .footer-text {
         margin: 6vw 4vw 0 0;
+        @include mq(md) {
+            margin: 1rem auto 0 auto;
+        }
         .bold {
             font-weight: bold;
             margin-top: 1vw;
+            @include mq(md) {
+                margin-top: 1rem;
+            }
         }
     }
     .footer-link {
         margin: 6vw 0 0 4vw;
+        @include mq(md) {
+            margin: 1rem auto 0 auto;
+        }
         .tell-link {
             margin-top: 1vw;
             a {
                 display: inline-block;
                 background: linear-gradient(rgba(218, 16, 16, 0.5), rgba(218, 16, 16, 0.5)), url(img/link.jpg);
                 background-size: cover;
-                // background-color: $font_color1;
                 font-size: 1.57vw;
                 text-decoration: none;
                 padding: 1vw 3.5vw;
                 color: $main-color;
                 font-weight: bold;
+                @include mq(md) {
+                    padding: 1vw 4.75vw;
+                    min-width: 106px;
+                }
             }
         }
         .ticket {
@@ -481,6 +524,10 @@ footer {
             a {
                 display: inline;
                 margin: 0;
+                @include mq(md) {
+                    margin: 1rem 0 0 0;
+                    padding: 1vw 3vw;
+                }
             }
         }
     }
