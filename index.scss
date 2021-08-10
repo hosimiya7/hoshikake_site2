@@ -15,7 +15,7 @@ $font-family1: "New Tegomin", serif;
 $font-family2: "KleeOne";
 
 $breakpoints: (
-    "sm": "screen and (max-width: 500px)",
+    "sm": "screen and (max-width: 550px)",
     "md": "screen and (max-width: 900px)",
 ) !default;
 
@@ -40,8 +40,6 @@ $breakpoints: (
     color: $font_color2;
     line-height: 2;
     opacity: 0.4;
-    @include mq(md) {
-    }
 }
 
 body {
@@ -96,6 +94,9 @@ h3 {
     font-size: 3vw;
     color: $font_color3;
     text-align: center;
+    @include mq(sm) {
+        font-size: 6vw;
+    }
 }
 // ヘッダー部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
@@ -142,6 +143,9 @@ header {
     position: relative;
     h3 {
         margin: 7vw 0 0 0;
+        @include mq(sm) {
+            margin-top: 14vw;
+        }
     }
     .story-text {
         font-size: 1.2vw;
@@ -397,6 +401,9 @@ header {
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.8);
         background-blend-mode: darken;
+        @include mq(md) {
+            margin: 1vw 4vw 0 4vw;
+        }
         p {
             margin: 1vw 0 0 0;
             padding: 6vw 0;
@@ -467,6 +474,9 @@ header {
         padding: 0.5rem;
         display: flex;
         margin: 1vw auto 0 auto;
+        @include mq(sm) {
+            width: 40vw;
+        }
     }
 }
 
@@ -479,6 +489,9 @@ footer {
         padding: 0;
         margin-top: 10rem;
         text-align: center;
+        @include mq(sm) {
+            margin-top: 20vw;
+        }
     }
     .footer-text {
         margin: 6vw 4vw 0 0;
@@ -534,5 +547,8 @@ footer {
     .copy-write {
         text-align: center;
         margin-top: 10vw;
+        p{
+            font-family: $font-family1;
+        }
     }
 }
