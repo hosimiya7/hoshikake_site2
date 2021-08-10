@@ -46,8 +46,6 @@ $breakpoints: (
 
 body {
     background-color: $main-color;
-    // background-image: url(img/comp.png);
-    // background-color: rgba(255, 255, 255, 0.13);
     background-blend-mode: lighten;
     background-size: cover;
     margin-bottom: 2rem;
@@ -165,10 +163,11 @@ header {
     .ticket-link {
         margin: 4vw 0 0 0;
         text-align: center;
+        z-index: 50;
         a {
             display: inline-block;
-            // background-image: url(img/link.jpg);
-            background-color: $font_color1;
+            background: linear-gradient(rgba(218, 16, 16, 0.5), rgba(218, 16, 16, 0.5)), url(img/link.jpg);
+            background-size: cover;
             font-size: 1.5vw;
             text-decoration: none;
             padding: 1vw 1.5vw;
@@ -179,7 +178,7 @@ header {
     .novel-text {
         text-align: right;
         z-index: 2;
-        margin: -4vw 2rem 0 0;
+        margin: 0 2rem 0 0;
     }
 }
 
@@ -291,8 +290,8 @@ header {
         text-align: center;
         a {
             display: inline-block;
-            // background-image: url(img/link.jpg);
-            background-color: $font_color1;
+            background: linear-gradient(rgba(218, 16, 16, 0.5), rgba(218, 16, 16, 0.5)), url(img/link.jpg);
+            background-size: cover;
             font-size: 1.5vw;
             text-decoration: none;
             padding: 1vw 2vw;
@@ -340,7 +339,7 @@ header {
     }
     img {
         width: 35vw;
-        filter: opacity(40%);
+        filter: opacity(55%);
     }
     .novel-text {
         text-align: right;
@@ -463,8 +462,9 @@ footer {
             margin-top: 1vw;
             a {
                 display: inline-block;
-                // background-image: url(img/link.jpg);
-                background-color: $font_color1;
+                background: linear-gradient(rgba(218, 16, 16, 0.5), rgba(218, 16, 16, 0.5)), url(img/link.jpg);
+                background-size: cover;
+                // background-color: $font_color1;
                 font-size: 1.57vw;
                 text-decoration: none;
                 padding: 1vw 3.5vw;

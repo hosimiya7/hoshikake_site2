@@ -153,11 +153,14 @@ header .header-img .novel-text {
 .story .ticket-link {
   margin: 4vw 0 0 0;
   text-align: center;
+  z-index: 50;
 }
 
 .story .ticket-link a {
   display: inline-block;
-  background-color: #a82c2c;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 16, 16, 0.5)), to(rgba(218, 16, 16, 0.5))), url(img/link.jpg);
+  background: linear-gradient(rgba(218, 16, 16, 0.5), rgba(218, 16, 16, 0.5)), url(img/link.jpg);
+  background-size: cover;
   font-size: 1.5vw;
   text-decoration: none;
   padding: 1vw 1.5vw;
@@ -168,7 +171,7 @@ header .header-img .novel-text {
 .story .novel-text {
   text-align: right;
   z-index: 2;
-  margin: -4vw 2rem 0 0;
+  margin: 0 2rem 0 0;
 }
 
 .mission {
@@ -298,7 +301,9 @@ header .header-img .novel-text {
 
 .ticket .ticket-link a {
   display: inline-block;
-  background-color: #a82c2c;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 16, 16, 0.5)), to(rgba(218, 16, 16, 0.5))), url(img/link.jpg);
+  background: linear-gradient(rgba(218, 16, 16, 0.5), rgba(218, 16, 16, 0.5)), url(img/link.jpg);
+  background-size: cover;
   font-size: 1.5vw;
   text-decoration: none;
   padding: 1vw 2vw;
@@ -347,8 +352,8 @@ header .header-img .novel-text {
 
 .access img {
   width: 35vw;
-  -webkit-filter: opacity(40%);
-          filter: opacity(40%);
+  -webkit-filter: opacity(55%);
+          filter: opacity(55%);
 }
 
 .access .novel-text {
@@ -489,7 +494,9 @@ footer .footer-link .tell-link {
 
 footer .footer-link .tell-link a {
   display: inline-block;
-  background-color: #a82c2c;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 16, 16, 0.5)), to(rgba(218, 16, 16, 0.5))), url(img/link.jpg);
+  background: linear-gradient(rgba(218, 16, 16, 0.5), rgba(218, 16, 16, 0.5)), url(img/link.jpg);
+  background-size: cover;
   font-size: 1.57vw;
   text-decoration: none;
   padding: 1vw 3.5vw;
