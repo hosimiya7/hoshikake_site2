@@ -1,15 +1,6 @@
-// function getId(dom) {
-//     const scrollTop = dom.scrollTop()
-//     if (scrollTop > 100 && scrollTop < 600) {
-//         return 'call_sound'
-//     }
-//     if (scrollTop > 800 && scrollTop < 1200) {
-//         return 'sizuku_sound'
-//     }
-//     return null
-// }
 
 $(function () {
+    alert('右上の音量ボタンをオンにするとこのサイトをよりお楽しみいただけます');
 
     $('#Audio-Control button').click(function () {
         $('#Audio-Control button').toggleClass('active');
@@ -33,27 +24,16 @@ $(function () {
             sounds.playSounds('ticket', 'sizuku_sound')
         }
     });
+
+    $('input').change(function() {
+
+        const message = new Message()
+        console.log(message.inputText)
+        message.isMessage()
+
+    });
 });
 
-
-// class Sound {
-
-//     dom
-
-//     constructor(id) {
-//         this.dom = document.getElementById(id);
-//     }
-
-//     playSound() {
-//         if (this.dom) {
-//             this.dom.play()
-//         }
-//     }
-
-//     pauseSound() {
-//         this.dom.pause()
-//     }
-// }
 
 class Sounds {
 
@@ -95,6 +75,20 @@ class Sounds {
 
     isMuted() {
         return document.querySelector('button.active').id === 'off'
+    }
+
+}
+
+class Message {
+
+    inputText = $("#message").val()
+
+    isMessage() {
+        if (this.inputText === '37564' || this.inputText === 'みなごろし' || this.inputText === '皆殺し') {
+            alert('せっかく仲良くなれると思ったのに…。')
+        } else {
+            alert('不正解。残念。諦めて一緒にここで過ごしましょう…。')
+        }
     }
 
 }

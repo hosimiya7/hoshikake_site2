@@ -516,6 +516,7 @@ header .header-img .novel-text {
 
 .command {
   position: relative;
+  background-color: rgba(170, 170, 170, 0);
 }
 
 .command .novel-text {
