@@ -56,7 +56,7 @@ class Sounds {
 
         // 要素が半分見えたら表示して、要素がウィンドウから半分消えたら非表示にする
         if (!this.isMuted()) {
-            if (windowS > elemO - windowH + (windowH / 2) && windowS < elemO + elemH - (elemH / 2)) {
+            if (windowS > elemO - windowH + (windowH / 4) && windowS < elemO + elemH - (elemH / 2)) {
                 document.getElementById(audioId).play()
             } else {
                 document.getElementById(audioId).pause()
@@ -84,10 +84,23 @@ class Message {
     inputText = $("#message").val()
 
     isMessage() {
+
         if (this.inputText === '37564' || this.inputText === 'みなごろし' || this.inputText === '皆殺し') {
-            alert('せっかく仲良くなれると思ったのに…。')
-        } else {
-            alert('不正解。残念。諦めて一緒にここで過ごしましょう…。')
+            $('#change_message').text('見つけてしまったのね。残念。せっかく仲良くなれると思ったのに…。')
+            $('#change_message').addClass('change-message')
+            $('.hidden-content').addClass('hidden')
+
+        }
+        else {
+            $('#change_message').text('不正解。残念。諦めて一緒にここで過ごしましょう…。')
+            $('#change_message').addClass('change-message')
+            $('.hidden-content').addClass('hidden')
+            if(this.inputText === ""){
+                $('#change_message').text('メッセージを私に教えて')
+                $('#change_message').removeClass('change-message')
+                $('.hidden-content').removeClass('hidden')
+            }
+
         }
     }
 

@@ -535,6 +535,10 @@ header .header-img .novel-text {
   left: calc((100% - 70%) / 2);
 }
 
+.command .background-black {
+  display: none;
+}
+
 .command .command-text p {
   font-family: "New Tegomin", serif;
   font-size: 1vw;
@@ -572,6 +576,15 @@ header .header-img .novel-text {
 
 .command .command-text p .large {
   font-size: 3vw;
+}
+
+.command .command-text .change-message {
+  font-family: "New Tegomin", serif;
+  font-size: 1.5vw;
+}
+
+.command .command-text .hidden {
+  visibility: hidden;
 }
 
 .command input {
