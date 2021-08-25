@@ -112,7 +112,7 @@ button {
 
 #Audio-Control {
     overflow: hidden;
-    margin-left: 90vw;
+    margin-left: 85vw;
 }
 
 #Audio-Control button {
@@ -225,6 +225,10 @@ header {
             padding: 1vw 1.5vw;
             color: $main-color;
             font-weight: bold;
+            &:hover{
+                background: linear-gradient(rgba(146, 6, 6, 0.178), rgba(146, 6, 6, 0.466)), url(img/link.jpg);
+                color: $font_color2;
+            }
         }
     }
     .novel-text {
@@ -361,6 +365,10 @@ header {
             padding: 1vw 2vw;
             color: $main-color;
             font-weight: bold;
+            &:hover{
+                background: linear-gradient(rgba(146, 6, 6, 0.178), rgba(146, 6, 6, 0.466)), url(img/link.jpg);
+                color: $font_color2;
+            }
         }
     }
     .ticket-text {
@@ -578,6 +586,10 @@ footer {
                 padding: 1vw 3.5vw;
                 color: $main-color;
                 font-weight: bold;
+                &:hover{
+                    background: linear-gradient(rgba(146, 6, 6, 0.178), rgba(146, 6, 6, 0.466)), url(img/link.jpg);
+                    color: $font_color2;
+                }
                 @include mq(md) {
                     padding: 1vw 4.75vw;
                     min-width: 106px;

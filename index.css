@@ -103,7 +103,7 @@ button {
 
 #Audio-Control {
   overflow: hidden;
-  margin-left: 90vw;
+  margin-left: 85vw;
 }
 
 #Audio-Control button {
@@ -226,6 +226,12 @@ header .header-img .novel-text {
   padding: 1vw 1.5vw;
   color: #000000;
   font-weight: bold;
+}
+
+.story .ticket-link a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(146, 6, 6, 0.178)), to(rgba(146, 6, 6, 0.466))), url(img/link.jpg);
+  background: linear-gradient(rgba(146, 6, 6, 0.178), rgba(146, 6, 6, 0.466)), url(img/link.jpg);
+  color: #dcdcdc;
 }
 
 .story .novel-text {
@@ -394,6 +400,12 @@ header .header-img .novel-text {
   padding: 1vw 2vw;
   color: #000000;
   font-weight: bold;
+}
+
+.ticket .ticket-link a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(146, 6, 6, 0.178)), to(rgba(146, 6, 6, 0.466))), url(img/link.jpg);
+  background: linear-gradient(rgba(146, 6, 6, 0.178), rgba(146, 6, 6, 0.466)), url(img/link.jpg);
+  color: #dcdcdc;
 }
 
 .ticket .ticket-text {
@@ -670,6 +682,12 @@ footer .footer-link .tell-link a {
   padding: 1vw 3.5vw;
   color: #000000;
   font-weight: bold;
+}
+
+footer .footer-link .tell-link a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(146, 6, 6, 0.178)), to(rgba(146, 6, 6, 0.466))), url(img/link.jpg);
+  background: linear-gradient(rgba(146, 6, 6, 0.178), rgba(146, 6, 6, 0.466)), url(img/link.jpg);
+  color: #dcdcdc;
 }
 
 @media screen and (max-width: 900px) {
