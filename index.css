@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 550px) {
   .novel-text {
-    opacity: 0.3;
+    display: none;
   }
 }
 
@@ -160,6 +160,12 @@ header .header-img {
   z-index: -1;
 }
 
+@media screen and (max-width: 550px) {
+  header .header-img {
+    height: 250px;
+  }
+}
+
 header .header-img::after {
   content: "";
   position: absolute;
@@ -212,7 +218,7 @@ header .header-img .novel-text {
 
 @media screen and (max-width: 550px) {
   .story h3 {
-    margin-top: 14vw;
+    margin-top: 24vw;
   }
 }
 
@@ -278,6 +284,12 @@ header .header-img .novel-text {
   margin: 0 0 0 0;
 }
 
+@media screen and (max-width: 550px) {
+  .mission h3 {
+    margin-top: 24vw;
+  }
+}
+
 .mission .mission-text {
   font-size: 1.5vw;
   text-align: center;
@@ -324,6 +336,12 @@ header .header-img .novel-text {
 .ticket {
   position: relative;
   margin-top: -13vw;
+}
+
+@media screen and (max-width: 550px) {
+  .ticket {
+    margin-top: 24vw;
+  }
 }
 
 .ticket h3 {
@@ -484,6 +502,12 @@ header .header-img .novel-text {
   margin: 2vw 0 0 2rem;
 }
 
+@media screen and (max-width: 550px) {
+  .access {
+    margin-top: 44vw;
+  }
+}
+
 .access h3 {
   margin: -22vw 0 0 0;
 }
@@ -560,6 +584,12 @@ header .header-img .novel-text {
   margin: -8vw 2rem 0 0;
 }
 
+@media screen and (max-width: 550px) {
+  .caution {
+    margin-top: 24vw;
+  }
+}
+
 .caution .novel-text p {
   text-align: left;
   z-index: 2;
@@ -602,6 +632,12 @@ header .header-img .novel-text {
 .command {
   position: relative;
   background-color: rgba(170, 170, 170, 0);
+}
+
+@media screen and (max-width: 550px) {
+  .command {
+    margin-top: 24vw;
+  }
 }
 
 .command .novel-text {

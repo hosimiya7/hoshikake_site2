@@ -41,7 +41,7 @@ $breakpoints: (
     line-height: 2;
     opacity: 0.4;
     @include mq(sm) {
-        opacity: 0.3;
+        display: none;
     }
 }
 
@@ -163,6 +163,9 @@ header {
         position: relative;
         padding-bottom: 4vw;
         z-index: -1;
+        @include mq(sm) {
+            height: 250px;
+        }
         &::after {
             content: "";
             position: absolute;
@@ -205,7 +208,7 @@ header {
     h3 {
         margin: 7vw 0 0 0;
         @include mq(sm) {
-            margin-top: 14vw;
+            margin-top: 24vw;
         }
     }
     .story-text {
@@ -258,6 +261,9 @@ header {
     position: relative;
     h3 {
         margin: 0 0 0 0;
+        @include mq(sm) {
+            margin-top: 24vw;
+        }
     }
     .mission-text {
         font-size: 1.5vw;
@@ -300,6 +306,9 @@ header {
 .ticket {
     position: relative;
     margin-top: -13vw;
+    @include mq(sm) {
+        margin-top: 24vw;
+    }
     h3 {
         margin: 0 0 0 0;
     }
@@ -421,6 +430,9 @@ header {
 }
 
 .access {
+    @include mq(sm) {
+        margin-top: 44vw;
+    }
     h3 {
         margin: -22vw 0 0 0;
     }
@@ -474,6 +486,9 @@ header {
 }
 
 .caution {
+    @include mq(sm) {
+        margin-top: 24vw;
+    }
     .novel-text {
         p {
             text-align: left;
@@ -513,6 +528,9 @@ header {
 .command {
     position: relative;
     background-color: rgba(170, 170, 170, 0);
+    @include mq(sm) {
+        margin-top: 24vw;
+    }
     .novel-text {
         text-align: left;
         line-height: 5;
