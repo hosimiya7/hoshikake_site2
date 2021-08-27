@@ -259,6 +259,12 @@ header .header-img .novel-text {
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 900px) {
+  .mission .mission-text p:last-child {
+    margin-top: 2vw;
+  }
+}
+
 .mission .mission-text span {
   font-size: 1.5vw;
   font-family: "New Tegomin", serif;
@@ -415,8 +421,21 @@ header .header-img .novel-text {
   line-height: 2;
 }
 
+@media screen and (max-width: 900px) {
+  .ticket .ticket-text p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
 .ticket .ticket-text p:last-child {
   margin-top: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .ticket .ticket-text p:last-child {
+    margin-top: 2vw;
+  }
 }
 
 .ticket .novel-text {

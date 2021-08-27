@@ -251,6 +251,9 @@ header {
         p {
             &:last-child {
                 margin-top: 3rem;
+                @include mq(md) {
+                    margin-top: 2vw;
+                }
             }
         }
         span {
@@ -377,8 +380,15 @@ header {
         margin: 1.5vw 0 0 0;
         line-height: 2;
         p {
+            @include mq(md) {
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
             &:last-child {
                 margin-top: 3rem;
+                @include mq(md) {
+                    margin-top: 2vw;
+                }
             }
         }
     }
