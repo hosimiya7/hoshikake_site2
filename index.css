@@ -19,6 +19,12 @@
   opacity: 0.4;
 }
 
+@media screen and (max-width: 550px) {
+  .novel-text {
+    opacity: 0.3;
+  }
+}
+
 body {
   background-color: #000000;
   background-blend-mode: lighten;
@@ -106,6 +112,18 @@ button {
   margin-left: 85vw;
 }
 
+@media screen and (max-width: 900px) {
+  #Audio-Control {
+    margin-left: 80vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #Audio-Control {
+    margin-left: 60vw;
+  }
+}
+
 #Audio-Control button {
   border: 1px solid #ccc;
   width: 40px;
@@ -160,10 +178,22 @@ header .header-img h2 {
   z-index: 1;
 }
 
+@media screen and (max-width: 550px) {
+  header .header-img h2 {
+    font-size: 6vw;
+  }
+}
+
 header .header-img h2 span {
   font-size: 5vw;
   font-family: "New Tegomin", serif;
   color: #a82c2c;
+}
+
+@media screen and (max-width: 550px) {
+  header .header-img h2 span {
+    font-size: 7vw;
+  }
 }
 
 header .header-img .novel-text {
@@ -187,7 +217,7 @@ header .header-img .novel-text {
 }
 
 .story .story-text {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   text-align: center;
   margin: 3.5vw 0 0 0;
   line-height: 1.6;
@@ -249,7 +279,7 @@ header .header-img .novel-text {
 }
 
 .mission .mission-text {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   text-align: center;
   margin: 4vw 0 0 0;
   line-height: 1.6;
@@ -332,7 +362,7 @@ header .header-img .novel-text {
 
 @media screen and (max-width: 900px) {
   .ticket table tr:last-child {
-    margin: 4.5vw 1vw 0 1vw;
+    margin: 0.5vw 0.5vw 0 0.5vw;
   }
 }
 
@@ -340,8 +370,20 @@ header .header-img .novel-text {
   margin: 0.5vw 0 0 6vw;
 }
 
+@media screen and (max-width: 550px) {
+  .ticket table tr:last-child td {
+    margin: 0.5vw 0vw 0 1vw;
+  }
+}
+
 .ticket table tr:last-child td:nth-child(2) {
   margin-left: 10vw;
+}
+
+@media screen and (max-width: 550px) {
+  .ticket table tr:last-child td:nth-child(2) {
+    margin-left: 2vw;
+  }
 }
 
 .ticket table td {
@@ -415,7 +457,7 @@ header .header-img .novel-text {
 }
 
 .ticket .ticket-text {
-  font-size: 1vw;
+  font-size: 1.2vw;
   text-align: center;
   margin: 1.5vw 0 0 0;
   line-height: 2;
@@ -447,7 +489,7 @@ header .header-img .novel-text {
 }
 
 .access .access-text {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   text-align: center;
   margin: 4vw 0 0 0;
   line-height: 1.6;
@@ -487,6 +529,12 @@ header .header-img .novel-text {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .access .map iframe {
+    width: 60vw;
+  }
+}
+
 .access img {
   width: 35vw;
   -webkit-filter: opacity(55%);
@@ -497,6 +545,12 @@ header .header-img .novel-text {
   .access img {
     margin: 1rem auto 0 auto;
     width: 45vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .access img {
+    width: 60vw;
   }
 }
 
@@ -518,7 +572,7 @@ header .header-img .novel-text {
 
 .caution .caution-text {
   margin: 1vw auto 0 auto;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   text-align: center;
   line-height: 1.8;
   background-image: url(img/fire.jpg);
@@ -572,7 +626,7 @@ header .header-img .novel-text {
 
 .command .command-text p {
   font-family: "New Tegomin", serif;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 .command .command-text p:nth-child(1) {
@@ -602,7 +656,7 @@ header .header-img .novel-text {
 .command .command-text p span {
   font-family: "New Tegomin", serif;
   color: #a82c2c;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
 }
 
 .command .command-text p .large {
@@ -662,6 +716,7 @@ footer .footer-text {
 
 @media screen and (max-width: 900px) {
   footer .footer-text {
+    font-size: 1.5vw;
     margin: 1rem auto 0 auto;
   }
 }
@@ -684,6 +739,7 @@ footer .footer-link {
 @media screen and (max-width: 900px) {
   footer .footer-link {
     margin: 1rem auto 0 auto;
+    font-size: 1.5vw;
   }
 }
 
@@ -744,5 +800,6 @@ footer .copy-write {
 
 footer .copy-write p {
   font-family: "New Tegomin", serif;
+  font-size: 1vw;
 }
 /*# sourceMappingURL=index.css.map */

@@ -40,6 +40,9 @@ $breakpoints: (
     color: $font_color2;
     line-height: 2;
     opacity: 0.4;
+    @include mq(sm) {
+        opacity: 0.3;
+    }
 }
 
 body {
@@ -113,6 +116,12 @@ button {
 #Audio-Control {
     overflow: hidden;
     margin-left: 85vw;
+    @include mq(md) {
+        margin-left: 80vw;
+    }
+    @include mq(sm) {
+        margin-left: 60vw;
+    }
 }
 
 #Audio-Control button {
@@ -124,6 +133,7 @@ button {
     -moz-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
     transition: all 0.6s ease;
+
 }
 
 #Audio-Control button.on {
@@ -169,10 +179,16 @@ header {
             text-align: center;
             position: relative;
             z-index: 1;
+            @include mq(sm) {
+                font-size: 6vw;
+            }
             span {
                 font-size: 5vw;
                 font-family: $font-family1;
                 color: $font_color1;
+                @include mq(sm) {
+                    font-size: 7vw;
+                }
             }
         }
         .novel-text {
@@ -193,7 +209,7 @@ header {
         }
     }
     .story-text {
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         text-align: center;
         margin: 3.5vw 0 0 0;
         line-height: 1.6;
@@ -244,10 +260,11 @@ header {
         margin: 0 0 0 0;
     }
     .mission-text {
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         text-align: center;
         margin: 4vw 0 0 0;
         line-height: 1.6;
+
         p {
             &:last-child {
                 margin-top: 3rem;
@@ -304,12 +321,18 @@ header {
             &:last-child {
                 margin: 0.5vw 7.5vw;
                 @include mq(md) {
-                    margin: 4.5vw 1vw 0 1vw;
+                    margin: 0.5vw 0.5vw 0 0.5vw;
                 }
                 td {
                     margin: 0.5vw 0 0 6vw;
+                    @include mq(sm) {
+                        margin: 0.5vw 0vw 0 1vw;
+                    }
                     &:nth-child(2) {
                         margin-left: 10vw;
+                        @include mq(sm) {
+                            margin-left: 2vw;
+                        }
                     }
                 }
             }
@@ -375,7 +398,7 @@ header {
         }
     }
     .ticket-text {
-        font-size: 1vw;
+        font-size: 1.2vw;
         text-align: center;
         margin: 1.5vw 0 0 0;
         line-height: 2;
@@ -402,7 +425,7 @@ header {
         margin: -22vw 0 0 0;
     }
     .access-text {
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         text-align: center;
         margin: 4vw 0 0 0;
         line-height: 1.6;
@@ -427,6 +450,9 @@ header {
             @include mq(md) {
                 width: 40vw;
             }
+            @include mq(sm) {
+                width: 60vw;
+            }
         }
     }
     img {
@@ -435,6 +461,9 @@ header {
         @include mq(md) {
             margin: 1rem auto 0 auto;
             width: 45vw;
+        }
+        @include mq(sm) {
+            width: 60vw;
         }
     }
     .novel-text {
@@ -457,7 +486,7 @@ header {
     }
     .caution-text {
         margin: 1vw auto 0 auto;
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         text-align: center;
         line-height: 1.8;
         background-image: url(img/fire.jpg);
@@ -503,7 +532,7 @@ header {
     .command-text {
         p {
             font-family: $font-family1;
-            font-size: 1vw;
+            font-size: 1.2vw;
             &:nth-child(1) {
                 margin: 1vw 0 0 20vw;
             }
@@ -525,7 +554,7 @@ header {
             span {
                 font-family: $font-family1;
                 color: $font_color1;
-                font-size: 1.5vw;
+                font-size: 1.8vw;
             }
             .large {
                 font-size: 3vw;
@@ -570,6 +599,7 @@ footer {
     .footer-text {
         margin: 6vw 4vw 0 0;
         @include mq(md) {
+            font-size: 1.5vw;
             margin: 1rem auto 0 auto;
         }
         .bold {
@@ -584,6 +614,7 @@ footer {
         margin: 6vw 0 0 4vw;
         @include mq(md) {
             margin: 1rem auto 0 auto;
+            font-size: 1.5vw;
         }
         .tell-link {
             margin-top: 1vw;
@@ -627,6 +658,7 @@ footer {
         margin-top: 10vw;
         p {
             font-family: $font-family1;
+            font-size: 1vw;
         }
     }
 }

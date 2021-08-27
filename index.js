@@ -1,6 +1,6 @@
 
 $(function () {
-    alert('右上の音量ボタンをオンにするとこのサイトをよりお楽しみいただけます');
+    // alert('右上の音量ボタンをオンにするとこのサイトをよりお楽しみいただけます');
 
     $('#Audio-Control button').click(function () {
         $('#Audio-Control button').toggleClass('active');
