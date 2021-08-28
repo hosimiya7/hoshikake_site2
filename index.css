@@ -92,7 +92,7 @@ h3 {
 
 @media screen and (max-width: 550px) {
   h3 {
-    font-size: 6vw;
+    font-size: 1.5rem;
   }
 }
 
@@ -229,10 +229,22 @@ header .header-img .novel-text {
   line-height: 1.6;
 }
 
+@media screen and (max-width: 550px) {
+  .story .story-text {
+    font-size: 1rem;
+  }
+}
+
 .story .story-text span {
   font-size: 1.5vw;
   font-family: "New Tegomin", serif;
   color: #a82c2c;
+}
+
+@media screen and (max-width: 550px) {
+  .story .story-text span {
+    font-size: 1rem;
+  }
 }
 
 .story img {
@@ -262,6 +274,13 @@ header .header-img .novel-text {
   padding: 1vw 1.5vw;
   color: #000000;
   font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+  .story .ticket-link a {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
 }
 
 .story .ticket-link a:hover {
@@ -297,6 +316,12 @@ header .header-img .novel-text {
   line-height: 1.6;
 }
 
+@media screen and (max-width: 550px) {
+  .mission .mission-text {
+    font-size: 1rem;
+  }
+}
+
 .mission .mission-text p:last-child {
   margin-top: 3rem;
 }
@@ -311,6 +336,12 @@ header .header-img .novel-text {
   font-size: 1.5vw;
   font-family: "New Tegomin", serif;
   color: #a82c2c;
+}
+
+@media screen and (max-width: 550px) {
+  .mission .mission-text span {
+    font-size: 1rem;
+  }
 }
 
 .mission img {
@@ -417,6 +448,12 @@ header .header-img .novel-text {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .ticket table td {
+    font-size: 1rem;
+  }
+}
+
 .ticket table th {
   display: inline-block;
   font-size: 2vw;
@@ -434,6 +471,12 @@ header .header-img .novel-text {
 .ticket table:nth-child(2) td span {
   font-size: 1.2vw;
   margin-left: 3vw;
+}
+
+@media screen and (max-width: 550px) {
+  .ticket table:nth-child(2) td span {
+    font-size: 1rem;
+  }
 }
 
 .ticket table:nth-child(2) td:nth-child(2) {
@@ -468,6 +511,12 @@ header .header-img .novel-text {
   font-weight: bold;
 }
 
+@media screen and (max-width: 550px) {
+  .ticket .ticket-link a {
+    font-size: 1rem;
+  }
+}
+
 .ticket .ticket-link a:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(146, 6, 6, 0.178)), to(rgba(146, 6, 6, 0.466))), url(img/link.jpg);
   background: linear-gradient(rgba(146, 6, 6, 0.178), rgba(146, 6, 6, 0.466)), url(img/link.jpg);
@@ -479,6 +528,12 @@ header .header-img .novel-text {
   text-align: center;
   margin: 1.5vw 0 0 0;
   line-height: 2;
+}
+
+@media screen and (max-width: 550px) {
+  .ticket .ticket-text {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -517,6 +572,12 @@ header .header-img .novel-text {
   text-align: center;
   margin: 4vw 0 0 0;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 550px) {
+  .access .access-text {
+    font-size: 1rem;
+  }
 }
 
 .access .access-text p {
@@ -617,6 +678,12 @@ header .header-img .novel-text {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .caution .caution-text {
+    font-size: 1rem;
+  }
+}
+
 .caution .caution-text p {
   margin: 1vw 0 0 0;
   padding: 6vw 0;
@@ -665,6 +732,12 @@ header .header-img .novel-text {
   font-size: 1.2vw;
 }
 
+@media screen and (max-width: 550px) {
+  .command .command-text p {
+    font-size: 1rem;
+  }
+}
+
 .command .command-text p:nth-child(1) {
   margin: 1vw 0 0 20vw;
 }
@@ -695,13 +768,31 @@ header .header-img .novel-text {
   font-size: 1.8vw;
 }
 
+@media screen and (max-width: 550px) {
+  .command .command-text p span {
+    font-size: 1.2rem;
+  }
+}
+
 .command .command-text p .large {
   font-size: 3vw;
+}
+
+@media screen and (max-width: 550px) {
+  .command .command-text p .large {
+    font-size: 1.5rem;
+  }
 }
 
 .command .command-text .change-message {
   font-family: "New Tegomin", serif;
   font-size: 1.5vw;
+}
+
+@media screen and (max-width: 550px) {
+  .command .command-text .change-message {
+    font-size: 1rem;
+  }
 }
 
 .command .command-text .hidden {
@@ -757,6 +848,12 @@ footer .footer-text {
   }
 }
 
+@media screen and (max-width: 550px) {
+  footer .footer-text {
+    font-size: 1rem;
+  }
+}
+
 footer .footer-text .bold {
   font-weight: bold;
   margin-top: 1vw;
@@ -776,6 +873,12 @@ footer .footer-link {
   footer .footer-link {
     margin: 1rem auto 0 auto;
     font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  footer .footer-link {
+    font-size: 1rem;
   }
 }
 
