@@ -390,7 +390,7 @@ header {
                     font-size: 1.2vw;
                     margin-left: 3vw;
                     @include mq(sm) {
-                        font-size: 1rem;
+                        font-size: 0.8rem;
                     }
                 }
                 &:nth-child(2) {
@@ -602,7 +602,10 @@ header {
                 margin: 7vw 0 0 30vw;
             }
             &:nth-child(6) {
-                margin: 0 0 0 37vw;
+                margin: 0 0 0 36vw;
+                @include mq(sm) {
+                    margin-left: 30vw;
+                }
             }
             span {
                 font-family: $font-family1;
@@ -702,6 +705,10 @@ footer {
                 @include mq(md) {
                     padding: 1vw 4.75vw;
                     min-width: 106px;
+                }
+                @include mq(sm) {
+                    font-size: 1rem;
+                    padding: 1vw 8vw;
                 }
             }
         }

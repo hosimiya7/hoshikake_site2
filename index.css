@@ -475,7 +475,7 @@ header .header-img .novel-text {
 
 @media screen and (max-width: 550px) {
   .ticket table:nth-child(2) td span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -759,7 +759,13 @@ header .header-img .novel-text {
 }
 
 .command .command-text p:nth-child(6) {
-  margin: 0 0 0 37vw;
+  margin: 0 0 0 36vw;
+}
+
+@media screen and (max-width: 550px) {
+  .command .command-text p:nth-child(6) {
+    margin-left: 30vw;
+  }
 }
 
 .command .command-text p span {
@@ -908,6 +914,13 @@ footer .footer-link .tell-link a:hover {
   footer .footer-link .tell-link a {
     padding: 1vw 4.75vw;
     min-width: 106px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  footer .footer-link .tell-link a {
+    font-size: 1rem;
+    padding: 1vw 8vw;
   }
 }
 
